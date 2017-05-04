@@ -1,0 +1,66 @@
+{
+  "requiresAttributes": [
+    {
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17",
+      "targetId": null,
+      "targetType": null
+    },
+    {
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18",
+      "targetId": null,
+      "targetType": null
+    },
+    {
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth",
+      "targetId": null,
+      "targetType": null
+    }
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:us-west-2:742935543576:task-definition/ECSPRAC1-EcsTask-WSOXZNKT3DLQ:1",
+  "networkMode": "bridge",
+  "status": "ACTIVE",
+  "revision": 1,
+  "taskRoleArn": null,
+  "containerDefinitions": [
+    {
+      "volumesFrom": [],
+      "memory": 10,
+      "extraHosts": [],
+      "dnsServers": [],
+      "disableNetworking": null,
+      "dnsSearchDomains": [],
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "hostname": null,
+      "essential": true,
+      "entryPoint": [],
+      "mountPoints": [],
+      "name": "ECSPRAC1",
+      "ulimits": [],
+      "dockerSecurityOptions": [],
+      "environment": [],
+      "links": [],
+      "workingDirectory": null,
+      "readonlyRootFilesystem": false,
+      "image": "742935543576.dkr.ecr.us-west-2.amazonaws.com/vikram/testecr:BUILD_NUMBER",
+      "command": [],
+      "user": null,
+      "dockerLabels": {},
+      "logConfiguration": null,
+      "cpu": 10,
+      "privileged": null,
+      "memoryReservation": null
+    }
+  ],
+  "placementConstraints": [],
+  "volumes": [],
+  "family": "ECSPRAC1-EcsTask-WSOXZNKT3DLQ"
+}
